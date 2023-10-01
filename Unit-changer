@@ -1,0 +1,51 @@
+#include <stdio.h>
+
+int main() 
+{
+    float i, opt, m, cm, mm, kg, g, l, ml;
+    printf("Enter Any Unit that you want to change\n 1) meter to cm\n 2) cm to mm\n 3) kilogram to gram\n 4) liter to milliliter\n");
+    scanf("%f", &opt);
+    
+
+    for ( i; i < 2; i++)
+    {
+        if (opt ==1)
+        {   
+            printf("Enter Distance\n");
+            scanf("%f", &m);
+            cm = m/100;
+
+            printf("%f", cm);
+        }
+         else if(opt ==2)
+        {   
+            printf("Enter Distance\n");
+            scanf("%f", &cm);
+            mm = cm*10;
+
+            printf("%f\n", mm);
+        }
+        else if (opt ==3)
+        {   
+            printf("Enter Amount\n");
+            scanf("%f", &kg);
+            g = kg*1000;
+
+            printf("%f\n", g);
+        }
+        else if (opt ==4)
+        {   
+            printf("Enter Amount\n");
+            scanf("%f", &l);
+            ml = l*1000;
+
+            printf("%f\n", ml);
+        }
+        else{
+            printf("try again ");
+        }
+
+    }
+    
+    return 0;
+}
