@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() 
+{
+    int i;
+    for(i = 1; i<10; i++){
+        
+    int temp;
+        printf("Enter Any Temperature in Degree Celsius\n");
+        scanf("%d", &temp);
+        
+        int kelvin = temp + 273;
+        
+        printf("Your temperature in kelvin is %d\n", kelvin);
+        
+    }
+    return 0;
+}
