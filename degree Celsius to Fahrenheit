@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() 
+{
+    int i;
+    for(i = 1; i<10; i++){
+        
+        int degCls;
+        
+        printf("Enter any Temperature in degree celsius\n");
+        scanf("%d", &degCls);
+        int far = degCls*9/5 + 32;
+            
+        printf("%d\n", far);
+    
+    }
+    return 0;
+}
